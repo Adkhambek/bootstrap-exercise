@@ -9,3 +9,32 @@ a {
 ul {
     list-style: none;
 }
+
+/********************************************
+ Intro Section:
+*********************************************/
+
+.intro {
+    background-color: #09143B;
+    background-image: url('../images/circle.png'),
+        url('../images/circle-2.png');
+    background-position-x: 700px, -700px;
+    background-position-y: 90%, 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 150px;
+}
+
+nav a {
+    color: #ffffff;
+}
+
+.intro nav {
+    padding: 30px 0;
+}
+
+.intro__text {
+    margin-top: 100px;
+    width: 50%;
+    color: #ffffff;
+}
