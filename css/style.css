@@ -4,7 +4,6 @@ body {
 
 img {
     width: 100%;
-    display: block;
 }
 
 a {
@@ -57,6 +56,32 @@ nav a {
 .gallery__image {
     height: 300px;
     object-fit: fill;
+}
+
+.gallery__image__caption {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 40px 20px 10px;
+    width: 100%;
+    color: #ffffff;
+    display: none;
+    clip-path: polygon(0 0, 100% 18%, 100% 100%, 0% 100%);
+    transition: bottom .3s ease;
+}
+
+.gallery__link:hover .gallery__image__caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.gallery__image__caption h1 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.gallery__image__caption img {
+    width: 30px;
 }
 
 .gallery__image_helf {
