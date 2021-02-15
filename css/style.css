@@ -2,6 +2,11 @@ body {
     font-family: 'HelveticaNeue', sans-serif;
 }
 
+img {
+    width: 100%;
+    display: block;
+}
+
 a {
     text-decoration: none;
 }
@@ -35,6 +40,50 @@ nav a {
 
 .intro__text {
     margin-top: 100px;
-    width: 50%;
+    width: 90%;
     color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .intro__text {
+        width: 50%;
+    }
+}
+
+/********************************************
+ Gallery Section:
+*********************************************/
+
+.gallery__image {
+    height: 300px;
+    object-fit: fill;
+}
+
+.gallery__image_helf {
+    height: 300px;
+}
+
+@media (min-width: 768px) {
+    .gallery__image {
+        height: 418px;
+    }
+
+    .gallery__image_helf {
+        height: 200px;
+    }
+}
+
+/********************************************
+ Footer Section:
+*********************************************/
+.footer__text {
+    width: 90%;
+    line-height: 2;
+}
+
+@media (min-width: 768px) {
+    .footer__text {
+        width: 50%;
+        line-height: 2;
+    }
 }
