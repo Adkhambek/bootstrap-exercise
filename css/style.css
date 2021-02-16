@@ -33,6 +33,19 @@ nav a {
     color: #ffffff;
 }
 
+.navbar-brand:hover {
+    color: #ffffff;
+}
+
+.nav-link {
+    transition: transform .3s ease;
+}
+
+.nav-link:hover {
+    transform: scale(1.2);
+    color: #ffffff;
+}
+
 .intro nav {
     padding: 30px 0;
 }
@@ -58,19 +71,23 @@ nav a {
     object-fit: fill;
 }
 
+.gallery__link {
+    overflow: hidden;
+}
+
 .gallery__image__caption {
     background-color: rgba(0, 0, 0, 0.85);
     padding: 40px 20px 10px;
     width: 100%;
     color: #ffffff;
-    display: none;
     clip-path: polygon(0 0, 100% 18%, 100% 100%, 0% 100%);
-    transition: bottom .3s ease;
+    transition: bottom .5s ease;
+    position: absolute;
+    bottom: -100%;
+
 }
 
 .gallery__link:hover .gallery__image__caption {
-    display: block;
-    position: absolute;
     bottom: 0;
 }
 
