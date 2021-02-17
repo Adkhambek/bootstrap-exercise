@@ -68,7 +68,8 @@ nav a {
 
 .gallery__image {
     height: 300px;
-    object-fit: fill;
+    object-fit: cover;
+    object-position: center;
 }
 
 .gallery__link {
